@@ -1,0 +1,171 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    color: #F9FAFF;
+    background: url("../images/bg-blur.png") no-repeat top center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+  }
+
+::selection {
+  background: #FF5B8E;  /* 선택된 영역 배경색 */
+  color: #111;       /* 선택된 텍스트 색 */
+}
+  
+  /* 헤더 */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 80px;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+  }
+  
+  .menu a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+
+  .menu a:hover {
+    color:#9D0A1C;
+  }
+
+
+.projects {
+    padding: 100px 80px 250px;
+    color: #F9FAFF;
+  }
+  
+  .projects h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .projects h2 {
+    margin: 40px 0px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  
+  .project-card {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .project-info h3 {
+    margin: 6px 0 8px;
+    font-size: 20px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .project-number {
+    font-size: 14px;
+    opacity: 0.6;
+  }
+  
+  .project-info p {
+    font-size: 14px;
+    opacity: 0.75;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 12px;
+  }
+  
+  .view-link {
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: #F9FAFF;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .view-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 1px;
+    background: #F9FAFF;
+    transition: width 0.3s ease;
+  }
+  
+  .view-link:hover::after {
+    width: 100%;
+  }
+  
+  /* 실선 구분 */
+  .project-divider {
+    border: none;
+    height: 1px;
+    background: #F9FAFF;
+    opacity: 0.2;
+    margin: 80px 0;
+  }
+
+   /* 푸터 */
+   .footer {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  
+  .footer-right a {
+    color: #F9FAFF;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-bottom p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    color: #F9FAFF;
+    margin: 0;
+  }
+  
