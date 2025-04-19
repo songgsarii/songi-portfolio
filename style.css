@@ -1,0 +1,225 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    color: #F9FAFF;
+    background: url("images/bg-blur.png") no-repeat top center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+  }
+
+::selection {
+  background: #FF5B8E;  /* 선택된 영역 배경색 */
+  color: #111;       /* 선택된 텍스트 색 */
+}
+  
+  /* 헤더 */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 80px;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+  }
+  
+  .menu a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+
+  .menu a:hover {
+    color:#9D0A1C;
+  }
+
+  /* 히어로 */
+  .hero {
+    min-height: calc(100vh - 64px); /* 헤더 높이만큼 뺌 ✅ */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 80px;
+  }
+  
+  .hero-text h1 {
+    font-size: 64px;
+    line-height: 1.3;
+    margin: 0 0 18px 0;
+  }
+  
+  .hero-text span {
+    font-weight: bold;
+  }
+  
+  .contact-link {
+    position: relative;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    color: #F9FAFF;
+    text-decoration: none;
+  }
+
+  .contact-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.5px;
+    width: 0%;
+    height: 1px;
+    background-color: #F9FAFF;
+    transition: width 0.3s ease;
+  }
+  
+  .contact-link:hover::after {
+    width: 100%;
+  }
+  
+  
+  /* 스킬셋 */
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .skill-card {
+    flex: 1 1 22%;
+    text-align: left;
+  }
+  
+  .skill-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+  }
+  
+  .skill-card h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .skill-card p {
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  /* 프로젝트 */
+  .projects {
+    padding: 250px 80px; /* 오른쪽 패딩 제거 */
+    position: relative;
+    justify-content: center;
+  }
+  
+  
+  .projects h2 {
+    font-size: 48px;
+    margin-bottom: 32px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .project-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 80px;
+    font-weight: 600;
+    margin: 22px 0;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .project-list li a {
+    text-decoration:none;
+    color:#F9FAFF;
+    transition: color 0.3s ease;
+  }
+
+  .project-list li a:hover {
+    color:#FF5B8E;
+  }
+  
+  .project-number {
+    font-size: 22px;
+    margin-right: 12px;
+  }
+
+  .view-more {
+    position: relative;
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+  }
+  
+  .view-more::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.5px;
+    width: 0%;
+    height: 1px;
+    background-color: #F9FAFF;
+    transition: width 0.3s ease;
+  }
+  
+  .view-more:hover::after {
+    width: 100%;
+  }
+  
+
+  /* 푸터 */
+  .footer {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  
+  .footer-right a {
+    color: #F9FAFF;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-bottom p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    color: #F9FAFF;
+    margin: 0;
+  }
+  

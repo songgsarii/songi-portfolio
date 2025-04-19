@@ -1,0 +1,134 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    color: #F9FAFF;
+    background: url("images/bg-blur.png") no-repeat top center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+  }
+  
+  ::selection {
+    background: #FF5B8E;
+    color: #111;
+  }
+  
+  /* 헤더 */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 80px;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+  }
+  
+  .menu a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #9D0A1C;
+  }
+  
+  /* About 섹션 */
+  .about {
+    padding: 160px 120px 250px 120px;
+    max-width: 1200px;
+    margin: 0 80px;
+    line-height: 1.8;
+  }
+  
+  .about-text h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .about-text .intro {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 80px;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  .about-text h3 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .what-i-do {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    line-height: 2;
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 60px;
+  }
+  
+  /* Resume 다운로드 버튼 */
+  .download-btn {
+    display: inline-block;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    color: #F9FAFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #F9FAFF;
+    border-radius: 999px; /* ✅ 둥근 네모! */
+    transition: all 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #F9FAFF;
+    color: #9D0A1C;
+  }
+  
+  
+  /* 푸터 */
+  .footer {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  
+  .footer-right a {
+    color: #F9FAFF;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-bottom p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    color: #F9FAFF;
+    margin: 0;
+  }
+  

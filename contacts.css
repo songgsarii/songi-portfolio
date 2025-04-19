@@ -1,0 +1,93 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    color: #F9FAFF;
+    background: url("images/bg-blur.png") no-repeat top center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+  }
+
+::selection {
+  background: #FF5B8E;  /* 선택된 영역 배경색 */
+  color: #111;       /* 선택된 텍스트 색 */
+}
+  
+  /* 헤더 */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 80px;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+  }
+  
+  .menu a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+
+  .menu a:hover {
+    color:#9D0A1C;
+  }
+
+  /* CONTACT SECTION */
+  .contact-hero {
+    min-height: calc(100vh - 64px); /* 헤더 제외한 높이 */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 80px;
+  }
+  
+  .hello {
+    font-size: 96px;
+    font-weight:300;
+    margin-bottom: 16px;
+  }
+  
+  .hello .dot {
+    color: #9D0A1C;
+  }
+  
+  .desc {
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+  
+  .email, .social {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    opacity: 0.7;
+  }
+  
+  .email a,
+  .social a {
+    color: #F9FAFF;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .email a:hover,
+  .social a:hover {
+    color: #FF5B8E;
+  }
+  
