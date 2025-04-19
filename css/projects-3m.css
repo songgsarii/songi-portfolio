@@ -1,0 +1,120 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    color: #F9FAFF;
+    background: url("../images/bg-blur.png") no-repeat top center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+  }
+
+::selection {
+  background: #FF5B8E;  /* 선택된 영역 배경색 */
+  color: #111;       /* 선택된 텍스트 색 */
+}
+  
+  /* 헤더 */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 80px;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+  }
+  
+  .menu a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #F9FAFF;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+
+  .menu a:hover {
+    color:#9D0A1C;
+  }
+  
+  .project-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 0px 250px;
+  }
+  
+  .project-detail h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 40px;
+  }
+  
+  .project-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
+  
+  .project-content h2 {
+    margin-top: 40px;
+    font-size: 22px;
+  }
+  
+  .project-content ul {
+    padding-left: 20px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 60px;
+    font-family: 'Comfortaa', cursive;
+    color: #F9FAFF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+ /* 푸터 */
+ .footer {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  
+  .footer-right a {
+    color: #F9FAFF;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-bottom p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    color: #F9FAFF;
+    margin: 0;
+  }
+  
