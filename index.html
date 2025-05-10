@@ -33,22 +33,22 @@
     <div class="skill-card">
       <div class="skill-icon">✳</div>
       <h3>Digital Strategy</h3>
-      <p>Led the planning of digital marketing strategies in multiple industry-academic collaboration projects—some of which were adopted and applied in real campaigns.</p>
+      <p>Built user-centric digital marketing strategies based on real market data and consumer insights. Experience includes multi-channel IMC campaigns, brand repositioning, and collaboration planning.</p>
     </div>
     <div class="skill-card">
       <div class="skill-icon">✳</div>
       <h3>Data Analysis</h3>
-      <p>Analyzing user behavior with SQL to uncover patterns and insights that guide decision-making. Familiar with GA4 for tracking user behavior and web analytics.</p>
+      <p>Specialized in extracting actionable insights from market research and surveys, transforming raw data into marketing solutions that drive engagement and growth.</p>
     </div>
     <div class="skill-card">
       <div class="skill-icon">✳</div>
-      <h3>Content</h3>
-      <p>Directed content planning in various marketing projects. I focus on making content that people remember, share, and emotionally connect with.</p>
+      <h3>Content Development</h3>
+      <p>Designed viral Reels, YouTube ads, and brand messages that enhanced brand affinity. Focused on storytelling that resonates with target audiences across social media and digital platforms.</p>
     </div>
     <div class="skill-card">
       <div class="skill-icon">✳</div>
-      <h3>Communication</h3>
-      <p>Often took on the role of team lead, coordinating between members and facilitating clear, respectful collaboration.</p>
+      <h3>Strategic Communication</h3>
+      <p>Led team collaboration, brand communication refinement, and marketing academic society. Skilled in bridging different perspectives to create cohesive strategies and content.</p>
     </div>
   </section>
 
@@ -73,6 +73,22 @@
       <p>© 2025 Songi Og, all rights reserved</p>
     </div>
   </footer>
+
+  <script>
+    // 모든 .skill-card 요소 선택
+    const skillCards = document.querySelectorAll('.skill-card');
+
+    // 스크롤 이벤트 리스너 추가
+    window.addEventListener('scroll', () => {
+      skillCards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        // 카드가 화면에 보이면 show 클래스 추가
+        if (rect.top < window.innerHeight - 100) {
+          card.classList.add('show');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>

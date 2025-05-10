@@ -48,7 +48,7 @@ body {
 
   /* 히어로 */
   .hero {
-    min-height: calc(100vh - 64px); /* 헤더 높이만큼 뺌 ✅ */
+    min-height: calc(100vh - 64px); /* 헤더 높이만큼 뺌 */
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -121,6 +121,19 @@ body {
     font-weight: 500;
     line-height: 1.6;
     font-family: 'Comfortaa', cursive;
+  }
+
+  /* 초기 상태 */
+  .skill-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+
+  /* 화면에 보일 때 활성화 */
+  .skill-card.show {
+    opacity: 1;
+    transform: translateY(0);
   }
   
   /* 프로젝트 */
@@ -222,4 +235,3 @@ body {
     color: #F9FAFF;
     margin: 0;
   }
-  
