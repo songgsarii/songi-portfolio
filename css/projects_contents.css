@@ -1,13 +1,13 @@
 /* 기본 설정 */
 body {
     margin: 0;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Comfortaa', cursive; /* 본문에 Comfortaa 적용 */
     font-weight: 400;
     color: #F9FAFF;
     background: url("../images/bg-blur.png") no-repeat top center fixed;
     background-size: cover;
     scroll-behavior: smooth;
-  }
+}
 
 ::selection {
   background: #FF5B8E;  /* 선택된 영역 배경색 */
@@ -55,6 +55,7 @@ body {
   .project-detail h1 {
     font-size: 48px;
     margin-bottom: 8px;
+    font-family: 'Crimson Text', serif; /* 소제목에 Crimson Text 적용 */
   }
   
   .subtitle {
@@ -72,10 +73,16 @@ body {
   .project-content h2 {
     margin-top: 40px;
     font-size: 22px;
+    font-family: 'Crimson Text', serif; /* 소제목에 Crimson Text 적용 */
   }
   
   .project-content ul {
     padding-left: 20px;
+  }
+
+  .role-list li {
+    list-style-type: disc;
+    margin-top: 10px;
   }
   
   .back-link {
@@ -85,6 +92,22 @@ body {
     color: #F9FAFF;
     text-decoration: none;
     font-size: 14px;
+    position: relative; /* 추가: 부모 요소 기준 설정 */
+  }
+  
+  .back-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.5px;
+    width: 0%;
+    height: 1px;
+    background-color: #F9FAFF;
+    transition: width 0.3s ease;
+  }
+  
+  .back-link:hover::after {
+    width: 100%;
   }
 
  /* 푸터 */
@@ -117,4 +140,3 @@ body {
     color: #F9FAFF;
     margin: 0;
   }
-  
